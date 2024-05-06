@@ -39,7 +39,8 @@ cmake_dependent_option(BGFX_BUILD_TOOLS_TEXTURE "Build bgfx texture tools." ON B
 set(BGFX_TOOLS_PREFIX "" CACHE STRING "Prefix name to add to name of tools (to avoid clashes)")
 option(BGFX_BUILD_EXAMPLES "Build bgfx examples." ON)
 cmake_dependent_option(
-	BGFX_BUILD_EXAMPLE_COMMON "Build bgfx example-common project." OFF "NOT BGFX_BUILD_EXAMPLES;NOT BGFX_BUILD_TOOLS" ON
+	BGFX_BUILD_EXAMPLE_COMMON "Build bgfx example-common project." OFF "NOT BGFX_BUILD_EXAMPLES;NOT BGFX_BUILD_TOOLS"
+	ON
 )
 option(BGFX_BUILD_TESTS "Build bgfx tests." OFF)
 option(BGFX_INSTALL "Create installation target." ON)
